@@ -2,11 +2,13 @@
 
 html {
     font-size: 24px;
-    background: rgb(255, 229, 194);
+    font-family: 'heebo', sans-serif;
+    font-weight: 300;
+    background: rgb(233, 150, 72);
 }
 
-img {
-    width: 30rem;
+header {
+    position: sticky;
 }
 
 #border {
@@ -19,16 +21,18 @@ img {
 nav:first-child {
     text-align: center;
     font-size: 1.5rem;
-    background-color: rgb(233, 150, 72);
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0rem;
 }
 
 a:link {
     color: rgb(41, 1, 1);
+    text-decoration: none;
 }
 
 a:hover {
     color: rgb(204, 65, 1);
+    opacity: 70%;
+    text-decoration:underline;
 }
 
 a:visited {
@@ -43,22 +47,25 @@ nav a {
 
 h1 {
     font-size: 3rem;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
     color: rgb(53, 32, 32);
+}
+
+.specialties {
+    display: flex;
 }
 
 span {
     margin: 0.5rem;
     padding: 0.2rem 0.5rem;
+    height: 1.5rem;
     background: rgb(233, 150, 72);
     color: rgb(255, 255, 255);
 }
 
-.links {
-    display: block;
-}
-
-.icon {
-    width: 1rem;
+span:hover {
+    margin-top: -10px;    
 }
 
 #description {
@@ -66,23 +73,39 @@ span {
 }
 
 .main-block {
-    background-color: rgb(233, 150, 72);
-    padding: 3rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 h1 {
     margin-bottom: 1rem;
 }
 
+.fa-whatsapp {
+    position: sticky;
+    top: calc(50% - 1vh);
+    right: 96%;
+    color: rgb(41, 1, 1);
+    font-size: 2rem;
+}
+
+.fa-whatsapp:hover {
+    opacity: 70%;
+}
+
 .main-introduction {
     display: flex;
-    margin: 3rem 8rem;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 229, 194);
+    height: 30rem;
 }
 
 .self-portrait {
-    width: 22rem;
+    width: 21rem;
+    height: 20rem;
     border-radius: 30px;
-    margin-right: 7rem;
 }
 
 .main-block span {
@@ -91,30 +114,18 @@ h1 {
 
 .project {
     width: 25rem;
-    display: inline-block;
-    margin-right: 4rem;
+    padding-bottom: 2rem;
 }
 
 .project-image {
-    width: 16rem;
-    display: inline-block;
-    margin-right: 10rem;
+    width: 22rem;
     border-radius: 10px;
-}
-
-.project-image:nth-of-type(2) {
-    margin-top: 2rem;
-}
-
-div {
-    display: inline-block;
+    margin: 2rem 5rem;
 }
 
 h3 {
     font-size: 1rem;
 }
-
-/*footer*/
 
 textarea {
     width: 20rem;
@@ -149,10 +160,20 @@ input {
     color: rgb(41, 1, 1);
 }
 
+/*footer*/
+
 footer {
     text-align: center;
     background-color: rgb(122, 66, 13);
     color:rgb(255, 229, 194);
     padding: 0.3rem;
     font-size: 0.6rem;
+}
+
+#up-arrow {
+    color: rgb(253, 228, 216);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 0.8rem;
 }
