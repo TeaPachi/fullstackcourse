@@ -1,0 +1,295 @@
+html {
+    background-color: #E5E5E5;
+    font-size: 14px;
+}
+
+#cover-title>span{
+    width: 24.64rem;
+    height: 9.35rem;
+    font-size: 3.42rem;
+    border: 0;
+    color: #FFFFFF;
+}
+
+.cover-image-en {
+    padding: 0 calc((100% - 25.3rem)/2);
+}
+
+.cover-en {
+    background-image: url(img/cover-photo.png);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0.8%;
+    width: 24.64rem;
+    height: 28.28rem;
+}
+
+#cover-title{
+    width: 15rem;
+    height: 3.7rem;
+    font-size: 3.42rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin-left: -5.6rem;
+    margin-top: -4.78rem;
+}
+
+.cover-heb {
+    display: none;
+}
+
+button {
+    background-color: #db4700;
+    color: #FFFFFF;
+    width: 9.14rem;
+    height: 3.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    margin: 0 1.5rem;
+    font-weight: 700;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 1rem;
+    display: inline;
+}
+
+.gray-block {
+    width: 11.28rem;
+    height: 11.35rem;
+}
+
+.shop {
+    margin-top: 2.14rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#product-name {
+    color: #A7A7A7;
+}
+
+h3 {
+    color: #000000;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.shop h2 {
+    font-size: 0.71rem;
+    color: #000000;
+    margin: 0.5rem 0 0.7rem;
+}
+
+.shop h3 {
+    font-size: 1rem;
+}
+
+.shop span {
+    font-size: 1rem;
+    color: #DB4700;
+}
+
+.shop-title {
+    display: none;
+}
+
+.shop>div span:nth-of-type(1) {
+    display: none;
+}
+
+.shop-all-button {
+    display: block;
+    width: 10.92rem;
+    height: 3.28rem;
+    margin: 2rem auto;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.discover-designers {
+    background-image: url(img/boaz-sides-untay-bayonne-mobile.jpg);
+    width: 24.57rem;
+    height: 22.42rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.discover-designers h1 {
+    font-size: 3.42rem;
+    color: #FFFFFF;
+    margin: 3rem 1rem 1rem;
+}
+
+.discover-designers p {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.discover-designers button {
+    background-color: #FFFFFF;
+    color: #DB4700;
+    width: 11.14rem;
+    height: 2.21rem;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    html {
+        direction:rtl;
+    }
+
+    .shop-title {
+        display: inline-block;
+        padding: 1rem calc(50% - 1.5vw);
+        font-size: 2.14rem;
+    }
+
+    .cover-image-heb {
+        background-image: url(img/wide-background.jpg);
+        background-size: 100%;
+        border-radius: 2%;
+        width: 133rem;
+        height: 59.5rem;
+        padding: 0 calc((100% - 133.5rem)/2);
+        display: flex;
+        align-items: center;
+    }
+
+    .cover-heb>p {
+        margin: 0;
+    }
+
+    .cover-heb {
+        font-size: 10.71rem;
+    }
+
+    .cover-heb:first-child {
+        display: block;
+        font-size: 10.71rem;
+        border: 0;
+    }
+
+    .cover-heb {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        color: #FFFFFF;
+        margin-right: 7.5rem;
+    }
+
+    .cover-en {
+        display: none;
+    }
+
+    .cover-heb button {
+        width: 14.42rem;
+        height: 4.78rem;
+        background-color: #EB595D;
+        font-size: 2.14rem;
+        margin: 0;
+    }
+
+    #join-community-button {
+        width: 18.07rem;
+    }
+
+    .cover-heb div :first-child {
+        font-size: 2.14rem;
+        width: 38.28rem;
+    }
+
+    h3 {
+        font-size: 2.14rem;
+        color: #000000; 
+    }
+
+    .shop div span,
+    .old-price,
+    .shop div h3,
+    h2 {
+        font-size: 1.71rem;
+    }
+
+    .shop {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0 calc((100% - 118rem)/2);
+    }
+
+    .gray-block {
+        width: 26.14rem;
+        height: 26.14rem;
+        display: inline;
+    }
+
+    #product-name {
+        font-size: 1.714rem;
+    }
+        
+    .shop h2 {
+        font-size: 1rem;
+        color: #000000;
+        margin: 0.5rem 0 0.7rem;
+    }
+
+    .shop h3 {
+        font-size: 1.714rem;
+    }
+
+    .shop span {
+        font-size: 1.714rem;
+        color: #DB4700;
+        padding: 0.2rem;
+    }
+
+    .shop>div span:nth-of-type(1) {
+        display: inline;
+    }
+
+    .shop>div span:nth-of-type(2) {
+        display: none;
+    }
+
+    .shop-all-button {
+        background-color: #EB595D;
+        width: 13.64rem;
+        height: 4.14rem;
+    }
+
+    .discover-designers {
+        background-image: url(img/boaz-sides-untay-bayonne.jpg);
+        width: 133.5rem;
+        height: 26.357rem;
+        margin-top: 1.35rem;
+    }
+    
+    .discover-designers h1 {
+        font-size: 5.14rem;
+    }
+
+    .discover-designers p {
+        font-size: 1.71rem;
+    }
+
+    .discover-designers button {
+        font-size: 1.71rem;
+        width: 18.21rem;
+        height: 4.14rem;
+    }
+}
