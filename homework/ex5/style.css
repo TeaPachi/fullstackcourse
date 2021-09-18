@@ -1,0 +1,123 @@
+:root {
+    background-color: rgb(125, 179, 230);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(81, 110, 187);
+    position: relative;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+  
+.topnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: rgb(125, 179, 230);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+.active {
+    background-color: rgb(125, 179, 230);
+    color: white;
+}
+
+#info-gathered div {
+    width: 70px;
+    display: inline-block;
+    padding: calc((100% - 1.5vh)/2);
+}
+
+/* #info-gathered h2 {
+    border-bottom: solid #222 2px;
+} */
+
+#info-gathered {
+    margin: auto;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(81, 110, 187);
+    width: 65vw;
+    height: 70vh;
+    /*so you can scroll change to
+     height: 100vh; */
+}
+
+#hidden_cat_pic {
+    margin: auto;
+    width: 5em;
+    padding-top: 0.5rem;
+    /* padding-top: 1em; */
+    /* display: none; */
+}
+
+.over18prompt {
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(81, 110, 187);
+    width: 65vw;
+    padding: 0.5em;
+}
+
+.over18prompt p {
+    display: block;
+    margin: auto;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+#contact-me {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-me p {
+    margin: 9px;
+}
+
+button {
+    margin: auto;
+    width: 4rem;
+}
+
+.send-button {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me input {
+    width: 100%;
+}
+
+@media only screen and (min-width: 960px){
+    #contact-me {
+        width: 25%;
+    }
+
+    .over18prompt {
+        width: 25%;
+    }
+
+    #info-gathered {
+        width: 25%;
+    }
+}

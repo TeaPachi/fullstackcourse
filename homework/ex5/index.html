@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6435fd81a5.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav">
+        <a href="#home" class="active">logo</a>
+        <div id="myLinks">
+            <a href="#gallery">גלרייה</a>
+            <a href="#contact">צור קשר</a>
+            <a href="#about">אודותי</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="over18prompt">
+                <p>האם אתם מעל גיל 18?</p>
+                <button id="yesBtn">כן</button> <button>לא</button>
+            </div>
+            <img src="img/big_mivzik.jpeg" alt="picture of my cat mivzik" id="hidden_cat_pic" style = "display: none">
+        </section>
+        <section id="contact-me">
+            <p action="/signup" method="post">
+                <p>
+                    <label label for="full name"></label>
+                    <input  id="fullName" type="text" name="full name" placeholder="שם מלא" required>
+                </p>
+                <p>
+                    <label for="email"></label>
+                    <input id="email" type="email" name="email" placeholder="אימייל">
+                </p>
+                <p>
+                    <label for="phone"></label>
+                    <input id="phone" type="tel" name="phone" placeholder="מספר טלפון">
+                </p>
+                <p class="send-button">
+                    <button id="btn">שלח</button>
+                </p>
+            </form>
+        </section>
+        <div>
+            <h2>לאן אנחנו מגלגלים את המסך עכשיו?</h2>
+            <p id="ScrollUpdate"></p>
+        </div>
+        <section id="info-gathered">
+                
+        </section>
+    </main>
+    <footer></footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
