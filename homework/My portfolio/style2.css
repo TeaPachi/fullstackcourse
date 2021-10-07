@@ -1,0 +1,405 @@
+:root {
+    --light_orange: rgb(255, 229, 194);
+    --orange: rgb(233, 150, 72);
+    --dark_orange: rgb(146, 72, 69);
+    --neon-orange: rgb(204, 65, 1);
+    --black: rgb(41, 1, 1);
+    --white: rgb(255, 255, 255);
+} 
+
+html {
+    font-size: 24px;
+    font-family: 'heebo', sans-serif;
+    font-weight: 300;
+    background: var(--orange);
+    width: 100%;
+}
+
+/*header*/
+
+header {
+    position: sticky;
+}
+
+#bars {
+    width: 2rem;
+    border: none;
+    background-color: var(--orange);
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: var(--light_orange);
+    height: 6rem;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    padding-right: 0.3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.display {
+    display: flex;
+}
+
+#border {
+    border-top: none;
+    border-bottom: none;
+}
+
+nav:first-child {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+a:link {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--neon-orange);
+    opacity: 70%;
+    text-decoration:underline;
+}
+
+a:visited {
+    color: var(--dark_orange);
+}
+
+nav a {
+    margin: 0.2rem;
+}
+
+/* main */
+
+h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+    color: rgb(53, 32, 32);
+}
+
+.specialties {
+    display: flex;
+    height: 3rem;
+    align-items: flex-end;
+}
+
+.specialties span {
+    background: var(--orange);
+}
+
+span {
+    margin: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    height: 1.5rem;
+    color: var(--white);
+    transition: 0.2s;
+}
+
+span:hover {
+    height: 2rem;
+}
+
+.main-block {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.main-introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 calc(50% - 15rem) 1rem;
+    border-radius: 0.2rem;
+    background-color: var(--light_orange);
+}
+
+/* current problem: text not centered
+because the flex includes the photo
+but I dont want to seprate the photo from 
+.main-introduction in the html because it 
+will make PC complications  */
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.fa-whatsapp {
+    position: sticky;
+    top: calc(50% - 1vh);
+    right: 96%;
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+.self-portrait {
+    width: 80vw;
+    border-radius: 15px;
+    max-width: 20rem;
+}
+
+.main-block {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.main-block span {
+    color: var(--black);
+}
+
+.project {
+    /* padding-bottom: 1rem; */
+    padding: 0 calc((100% - 90vw)/2)
+}
+
+.project-image {
+    width: 90vw;
+    border-radius: 10px;
+    max-width: 25rem;
+}
+
+/* contact me */
+
+textarea {
+    width: 80vw;
+    font-size: 0.8rem;
+}
+
+.contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(185, 103, 26);
+    padding: 1rem;
+    color: var(--black);
+}
+
+button {
+    background-color: rgb(255, 198, 152);
+    color: var(--black);
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.7rem;
+}
+
+input {
+    width: 50vw;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: solid 0.1rem rgb(0, 0, 0);
+    background-color: rgb(185, 103, 26);
+    font-size: 0.8rem;
+}
+
+::placeholder {
+    color: rgb(41, 1, 1);
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+    background-color: rgb(122, 66, 13);
+    color:var(--light_orange);
+    padding: 0.3rem;
+    font-size: 0.6rem;
+}
+
+#up-arrow {
+    color: var(--light_orange);
+    font-size: 0.8rem;
+}
+
+
+
+/* for the arrow to follow enter:
+position: fixed;
+right: 1rem;
+bottom: 0.7rem; */
+
+/*pc build bellow VVV*/
+
+@media only screen and (min-width: 1024px) {
+  
+  /* FINISH DELETING DUPLICATE INFO */
+
+    /*header*/
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    height: 6rem;
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
+}
+
+.hidden {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu a {
+    font-size: 1.5rem;
+}
+
+#bars {
+    display: none;
+}
+
+#border {
+    border: 0.2rem solid var(--dark_orange);
+    border-top: none;
+    border-bottom: none;
+    padding: 0.5rem;
+}
+
+nav:first-child {
+    font-size: 1.5rem;
+    padding: 2rem 1rem 0rem;
+}
+
+nav a {
+    margin: 1rem;
+}
+
+/*main*/
+
+h1 {
+    font-size: 3rem;
+}
+
+span {
+    margin: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    height: 1.5rem;
+}
+
+span:hover {
+    margin-top: -10px;    
+}
+
+#description {
+    font-size: 1.3rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.fa-whatsapp {
+    position: sticky;
+    top: calc(50% - 1vh);
+    right: 96%;
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.fa-whatsapp:hover {
+    opacity: 70%;
+}
+
+.main-introduction {
+    display: flex;
+    align-items: center;
+    background-color: var(--light_orange);
+    height: 30rem;
+    padding: calc(50% - 100vw);
+}
+
+.self-portrait {
+    width: 21rem;
+    height: 20rem;
+    border-radius: 30px;
+}
+
+.main-block {
+    text-align: right;
+}
+
+.main-block span {
+    color: var(--black);
+}
+
+.project {
+    width: 25rem;
+    padding: 0 calc(50% - 100vw) 2rem;
+}
+
+.project-image {
+    width: 22rem;
+    border-radius: 10px;
+    margin: 2rem 5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+textarea {
+    width: 20rem;
+    font-size: 1rem;
+}
+
+.contact {
+    text-align: center;
+    background-color: rgb(185, 103, 26);
+    padding: 1rem;
+    color: var(--black);
+}
+
+button {
+    background-color: rgb(255, 198, 152);
+    color: var(--black);
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.7rem;
+}
+
+input {
+    width: 18vw;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: solid 0.1rem rgb(0, 0, 0);
+    background-color: rgb(185, 103, 26);
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: rgb(41, 1, 1);
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+    background-color: rgb(122, 66, 13);
+    color:var(--light_orange);
+    padding: 0.3rem;
+    font-size: 0.6rem;
+}
+
+#up-arrow {
+    color: var(--light_orange);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 0.8rem;
+}
+
+}

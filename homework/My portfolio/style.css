@@ -1,0 +1,188 @@
+/*header*/
+
+:root {
+    --light_orange: rgb(255, 229, 194);
+    --orange: rgb(233, 150, 72);
+    --dark_orange: rgb(146, 72, 69);
+    --neon-orange: rgb(204, 65, 1);
+    --black: rgb(41, 1, 1);
+    --white: rgb(255, 255, 255);
+} 
+
+html {
+    font-size: 24px;
+    font-family: 'heebo', sans-serif;
+    font-weight: 300;
+    background: var(--orange);
+}
+
+header {
+    position: sticky;
+}
+
+#border {
+    border: 0.2rem solid var(--dark_orange);
+    border-top: none;
+    border-bottom: none;
+    padding: 0.5rem;
+}
+
+nav:first-child {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 1rem 0rem;
+}
+
+a:link {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--neon-orange);
+    opacity: 70%;
+    text-decoration:underline;
+}
+
+a:visited {
+    color: var(--dark_orange);
+}
+
+nav a {
+    margin: 1rem;
+}
+
+/*main*/
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+    color: rgb(53, 32, 32);
+}
+
+.specialties {
+    display: flex;
+}
+
+span {
+    margin: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    height: 1.5rem;
+    background: var(--orange);
+    color: var(--white);
+}
+
+span:hover {
+    margin-top: -10px;    
+}
+
+#description {
+    font-size: 1.3rem;
+}
+
+.main-block {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.fa-whatsapp {
+    position: sticky;
+    top: calc(50% - 1vh);
+    right: 96%;
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.fa-whatsapp:hover {
+    opacity: 70%;
+}
+
+.main-introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light_orange);
+    height: 30rem;
+}
+
+.self-portrait {
+    width: 21rem;
+    height: 20rem;
+    border-radius: 30px;
+}
+
+.main-block span {
+    color: var(--black);
+}
+
+.project {
+    width: 25rem;
+    padding-bottom: 2rem;
+}
+
+.project-image {
+    width: 22rem;
+    border-radius: 10px;
+    margin: 2rem 5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+textarea {
+    width: 20rem;
+    font-size: 0.8rem;
+}
+
+.contact {
+    text-align: center;
+    background-color: rgb(185, 103, 26);
+    padding: 1rem;
+    color: var(--black);
+}
+
+button {
+    background-color: rgb(255, 198, 152);
+    color: var(--black);
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.7rem;
+}
+
+input {
+    width: 15%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: solid 0.1rem rgb(0, 0, 0);
+    background-color: rgb(185, 103, 26);
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: rgb(41, 1, 1);
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+    background-color: rgb(122, 66, 13);
+    color:var(--light_orange);
+    padding: 0.3rem;
+    font-size: 0.6rem;
+}
+
+#up-arrow {
+    color: var(--light_orange);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 0.8rem;
+}
