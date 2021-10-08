@@ -27,6 +27,24 @@ header {
     background-color: var(--orange);
 }
 
+.myself {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.project h1:first-child {
+    margin: 1rem 0 0 0;
+    font-size: 2rem;
+}
+
+.project p:first-child {
+    padding-top: 0.86rem;
+    margin: 0;
+}
+
 #menu {
     display: flex;
     flex-direction: column;
@@ -245,6 +263,10 @@ bottom: 0.7rem; */
     height: 6rem;
     font-size: 0.8rem;
     padding-top: 0.4rem;
+}
+
+.myself {
+    display: block;
 }
 
 .hidden {
